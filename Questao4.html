@@ -4,7 +4,7 @@
    <style>
 
 
- .Bandeira{
+ .BanQuestao{
     display:block;
     border: 1px solid black;
    height: 100px;
@@ -12,33 +12,41 @@
 }
 
 
-#Holanda.Bandeira{
+#Holanda.BanQuestao{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
+    flex-direction: column;
+
 }
+#Holanda.BanQuestao>div{
+    flex-grow : 1 ;
+    
+}
+
 
 #partebranca{
+    
+    background-color: white;
     width: 200px;
     height: 50px;
-    background-color: white;
-
-}
+ }
 
 #bolinhavermelha{
-    width: 200px;
-    height: 50px;
+   
     background-color: red;
+    height: 50px;
+    width: 200px;
+ 
 }
 #azul{
+   
+    background-color: blue;
     width: 200px;
     height: 50px;
-    background-color: blue;
+  
 }
 
 
-    #Japan.Bandeira{
+    #Japan.BanQuestao{
         display: flex;
    background-color: 1px solid white;
    justify-content: center;
@@ -56,28 +64,29 @@
 
 
 
-    #Italia.Bandeira{
+    #Italia.BanQuestao{
        display: flex;
-  display: block;
+ 
   justify-content: center;
   align-items: center;
   
 
     }
 #verde{
-width: 60%;
-height: 150px;
+width: 33%;
+height: 100px;
+
 background-color: green;
 }
 #brancoItalia{
-width: 60%;
-height: 150px;
+width: 33%;
+height: 100px;
 background-color: white;
 }
 
 #vermelhoItalia{
-width: 60%;
-height: 150px;
+width: 33%;
+height: 100px;
 background-color: red;
 }
 
@@ -85,20 +94,23 @@ background-color: red;
 </head>
 
 <body>
-    <div class = "Bandeira" id="Holanda" >
-        <div id=" partebranca" ></div>
-        <div id=" bolinhavermelha" ></div>
-        <div id=" azul" ></div>
-        
-    </div>
-    
-    <div class = "Bandeira" id="Japan" >
+
+    <div class = "BanQuestao" id="Japan" >
         <div id="Jvermelho" ></div>
       
         
     </div>
 
-    <div  class = "Bandeira" id="Italia" >
+    <div class = "BanQuestao" id="Holanda" >
+        <div id="bolinhavermelha" ></div>
+        <div id="partebranca" ></div>
+        <div id="azul" ></div>
+        
+    </div>
+    
+    
+
+    <div  class = "BanQuestao" id="Italia" >
         <div id="verde" ></div>
         <div id="brancoItalia" ></div>
         <div id="vermelhoItalia" ></div>
